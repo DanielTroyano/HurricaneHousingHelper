@@ -1,38 +1,60 @@
+/* Changes to .App will effect css across the whole app  */
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* new CSS changes below */
+/* Styles for Login Page */
+.loginPage {
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.loginPage h1 {
+  color: #282c34;
+  font-size: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.loginPage h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.loginPage input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.loginPage button {
+  background-color: #61dafb;
   color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+/* Styles for Create Account Page */
+.createAccountPage {
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.createAccountPage h1 {
+  color: #282c34;
+  font-size: 2rem;
+}
+
+.createAccountPage input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.createAccountPage button {
+  background-color: #61dafb;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
 }
