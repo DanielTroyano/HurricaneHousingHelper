@@ -1,7 +1,15 @@
 // Login.js
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 function Login() {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/register');
+  }
+
   return (
     <div className="loginPage">
       <h1>Welcome to Hurricane Helper</h1>
@@ -16,7 +24,7 @@ function Login() {
       <br />
 
       <label>
-        Don’t have an account? <button>Register</button>
+        Don’t have an account? <button onClick={handleClick}>Register</button>
       </label>
     </div>
   );
