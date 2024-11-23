@@ -10,6 +10,10 @@
 //   );
 // }
 
+//temp import for writing to database, be sure to comment out when no longer writing
+import InsertDataComponent from './InsertDataComponent'; // Adjust the path if needed
+//
+
 // export default App;
 import React from 'react';
 import './App.css';
@@ -24,6 +28,9 @@ import UpdateInfo from './pages/updateInfo';
 function App() {
   return (
     <div className="App">
+      {/*Be sure to comment out below line when not writing to database*/}
+       {/* <InsertDataComponent /> */}
+       {/*Be sure to comment out below line when not writing to database*/}
       <Router>
         <Routes>
           <Route path="/" element={<Login />} /> {/* Login page */}
